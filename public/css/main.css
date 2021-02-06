@@ -1,0 +1,95 @@
+.header-right {
+    min-width: 15vw;
+}
+
+.profile img {
+    border-radius: 50%;
+    border: 1px solid #eee;
+    margin-left: 1vw;
+    cursor: pointer;
+}
+
+.profile img:hover {
+    background: #eee;
+    padding: 2px;
+    transition: 0.25s ease
+}
+
+.progress-bar:hover {
+    background: blueviolet;
+    transition: 0.2s ease;
+}
+
+.main {
+    /* display: grid; */
+    margin-top: 76px;
+    height: 100vh;
+    background: #eee;
+}
+
+.card-flip>div {
+    backface-visibility: hidden;
+    transition: transform 300ms;
+    transition-timing-function: linear;
+    width: 100%;
+    height: 250px;
+    margin: 0;
+    display: flex;
+}
+
+.card-front {
+    transform: rotateY(0deg);
+}
+
+.card-back {
+    transform: rotateY(180deg);
+    position: absolute;
+    top: 0;
+    height: 250px;
+}
+
+.card-flip:hover .card-front {
+    transform: rotateY(-180deg);
+}
+
+.card-flip:hover .card-back {
+    transform: rotateY(0deg);
+}
+
+.reading-box {
+    position: relative;
+    top: 76px;
+    padding: 0px;
+}
+
+.box-lid-menu {
+    top: 76px !important;
+}
+
+@media (max-width: 48em) {
+    .non-mobile {
+        display: none;
+    }
+    .box-lid-open .reading-box {
+        padding: 0px;
+    }
+    /* .box-lid-open .box-lid-menu nav {
+        left: 40px !important;
+        top: 40px;
+    } */
+    .reading-box {
+        padding: 40px 0px 20px 40px;
+    }
+    .card-flip>div {
+        height: 150px;
+    }
+    .card-back {
+        height: 150px;
+    }
+    .card-front,
+    .item-col {
+        box-shadow: 1px 1px 1px #00000082;
+        padding: 10px;
+        height: 25vh;
+    }
+}

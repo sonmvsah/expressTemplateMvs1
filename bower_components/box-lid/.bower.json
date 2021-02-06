@@ -1,0 +1,15 @@
+{
+  "name": "box-lid",
+  "homepage": "https://github.com/jimjh/box-lid",
+  "version": "0.1.3",
+  "_release": "0.1.3",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.1.3",
+    "commit": "ae21b70d60319a1eebefe8b2dbdbb161bb5556bc"
+  },
+  "_source": "https://github.com/jimjh/box-lid.git",
+  "_target": "^0.1.3",
+  "_originalSource": "https://github.com/jimjh/box-lid.git",
+  "_direct": true
+}
