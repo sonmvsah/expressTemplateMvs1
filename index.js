@@ -17,6 +17,10 @@
 
  });
 
+ app.get('/post', (req, res) => {
+     res.render('post/single');
+ });
+
 
 
 

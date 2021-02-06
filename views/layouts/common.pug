@@ -13,5 +13,32 @@ head
     script(src="/bootstrap/js/bootstrap.min.js")
     script(src='/box-lid/js/jquery.box-lid.min.js')
     script(src='/js/main.js')
+    body
+    nav.navbar.navbar-expand-lg.navbar-expand-sm.navbar-light.bg-light.fixed-top.page-header
+        a.navbar-brand(href='/')
+            img.d-inline-block.align-top(src='/images/logo.png', width='50', height='50', alt='', srcset='')
+        button.navbar-toggler(data-target='#my-nav', data-toggle='collapse', aria-controls='my-nav', aria-expanded='false', aria-label='Toggle navigation')
+            span.navbar-toggler-icon
+        #my-nav.collapse.navbar-collapse
+            ul.navbar-nav.mr-auto
+                li.nav-item.active
+                    a.nav-link.disabled(href='/')| Trang ch&#x1EE7;
+                        span.sr-only (current)
+                li.nav-item
+                    a.nav-link(href='#', tabindex='-1', aria-disabled='false') Gi&#x1EDB;i thi&#x1EC7;u
+                li.nav-item
+                    a.nav-link(href='/post', tabindex='-1', aria-disabled='false') Template post
+                li.nav-item.dropdown(data-toggle='dropdown')
+                    a.nav-link.dropdown-toggle(href='#') D&#x1ECB;ch v&#x1EE5;
+                    .dropdown-menu
+                        a.dropdown-item.active(href='/post.html') Post template
+                        a.dropdown-item(href='/post.html') Thi&#x1EBF;t k&#x1EBF; website
+                        a.dropdown-item(href='#') Thi&#x1EBF;t k&#x1EBF; nh&#x1EAD;n di&#x1EC7;n th&#x1B0;&#x1A1;ng hi&#x1EC7;u
+                        a.dropdown-item(href='#') Thi&#x1EBF;t k&#x1EBF; app mobile
+        label.non-mobile(for='header-right') Rank: Full Stack
+            .progress.header-right.non-mobile
+                .progress-bar(style='width:70%')  70% 
+        .profile.non-mobile
+            img(width='50', height='50', src='/images/logo.png', alt='', srcset='')
 
 block header
